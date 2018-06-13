@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Cleaning</title>
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <form method="post">
+      <div id="dropZone">
+        <span>Your zip</span>
+        <div class="group-form">
+          <input type="file" name="file" id="fileElem" value="" style="display: none">
+          <label for="fileElem" class="button">Choose archive</label>
+        </div>
+      </div>
+      <div class="form-groups">
+        <div class="form-group ">
+          <input type="checkbox" id="backfix" class="checkbox" name="backfix" value="">
+          <span class="checkmark"></span>
+          <label for="backfix">Add backfix</label>
+        </div>
+        <div class="form-group ">
+          <input type="checkbox" id="jquery" class="checkbox" name="jquery" value="">
+          <span class="checkmark"></span>
+          <label for="jquery">Add jquery</label>
+        </div>
+        <div class="form-group ">
+          <input type="checkbox" id="dtime" class="checkbox" name="dtime" value="">
+          <span class="checkmark"></span>
+          <label for="dtime">Add dr-dtime</label>
+        </div>
+      </div>
+      <hr>
+      <div class="form-group pl0">
+        <input type="text" placeholder="Links in project" class="form-control" id="link" name="link" value="" list="links_list">
+        <datalist class="" id="links_list" name="links_list">
+          <option value="{link|purchanger.com}">Поп</option>
+          <option value="{link|plextrk.com}">Волюм</option>
+          <option value="http://wtsense.com/click.php?lp=1">Бином</option>
+          <option value="<?=$link?>">Facebook</option>
+        </datalist>
+      </div>
+      <hr>
+
+      <button class="btn btn-info btn-block" type="button" id="send_data" name="button">Convert</button>
+
+      <br>
+      <style>
+        pre {
+          font-size: 22px;
+          width: 100%;
+        }
+      </style>
+      
+    </form>
+    <pre id="response"></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+</html>
