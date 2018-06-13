@@ -83,7 +83,7 @@
 	//$html2 = HtmlFormatter::format($html2);
 	file_put_contents('../uploads/'. $folderName .'/html/index_clean.html', $html2);
 	unlink('../uploads/tmp.html');
-	unlink('../uploads/'. $folderName . '/' . $filename);
+	// unlink('../uploads/'. $folderName . '/' . $filename);
 	$dirname = preg_replace('(.zip)', '', $filename);
 	rmRec('../uploads/' . $folderName . '/' . $dirname);
 	zip('../uploads/' . $folderName . '/html', '../uploads/' . $folderName . '/html.zip');
