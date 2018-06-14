@@ -1,0 +1,65 @@
+
+@media screen and (max-width: 1024px) {
+.all_content{
+    border:none;
+}
+}
+@media screen and (max-width: 991px) {
+.right_column, .menu, .header_text, .sub_menu, .mobile{
+    display: none;
+}
+    header{
+        border-bottom:1px solid #e1e1e1;
+    }
+    header > div{
+        text-align: center;
+    }
+    .logo{
+        padding:0;
+        margin: 0 0 15px;
+    }
+    .left_column{
+        float: none;
+        margin:0 auto;
+    }
+    .content{
+        width:100%;
+    }
+    .health{
+        margin: 20px auto;
+    }
+    .mob_center{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 660px) {
+  h1{
+      text-align: center;
+      font-size:34px;
+  }
+    .left_column{
+        width:320px;
+    }
+    .autor_block .avatar{
+        display: block;
+        margin:0 auto;
+    }
+    .autor_block{
+        text-align: center;
+    }
+    .autor_block .name div{
+        display: none!important;
+    }
+    .left_column p{
+        padding:0;
+    }
+    h2{
+        padding: 0;
+        font-size:24px;
+    }
+    .button{
+        font-size:19px;
+        padding:15px 5px;
+        line-height:1;
+    }
+}

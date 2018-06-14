@@ -80,6 +80,16 @@ $('button#send_data').on('click', function () {
     contentType: false, // важно - убираем форматирование данных по умолчанию
     processData: false, // важно - убираем преобразование строк по умолчанию
     data: form_data,
+    beforeSend: function() {
+      $('#dropZone span').html(`  <div class="loader">
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__ball"></div>
+    </div>`)
+    },
     success: function (php_script_response) {
       
       // $('#response').text(obj.info)

@@ -55,6 +55,11 @@ function getDirectories($base_dir, $pathProject, $level = 0) {
 					|| $extension == 'png' || $extension == 'gif' ) {
 				rename($dir, $pathProject . DIRECTORY_SEPARATOR . 'img' . DIRECTORY_SEPARATOR . $file);
 			}
+			if ($extension == 'eot' || $extension == 'ttf' || $extension == 'svg'
+					|| $extension == 'woff' || $extension == 'woff2' || $extension == 'woff2' ) {
+				rename($dir, $pathProject . DIRECTORY_SEPARATOR . 'fonts' . DIRECTORY_SEPARATOR . $file);
+			}
+			
 		}
 	}
 	// $addJs = array_unique($addJs);

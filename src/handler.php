@@ -9,14 +9,15 @@
 		$link = $_POST['link'];
 	}
 	$filename = $_FILES['file']['name'];
-
+	
 	if ($_FILES['file']['type'] !== 'application/zip' 
 	/* $_FILES['file']['type'] !== 'application/x-rar' */) {
-		echo json_encode(
+		/* echo json_encode(
 			array(
 				'info' => 'Only zip archive'
 			)
-		);
+		); */
+		echo 'Only zip archive';
 		die();
 	}
 
@@ -35,6 +36,7 @@
 		mkdir($pathProject.'/css',0777);
 		mkdir($pathProject.'/js',0777);
 		mkdir($pathProject.'/img',0777);
+		mkdir($pathProject.'/fonts',0777);
 
 		copy('add_js_files/dr-dtime.js', $pathProject . '/js/dr-dtime.js');
 		copy('add_js_files/jquery-1.12.4.min.js', $pathProject . '/js/jquery-1.12.4.min.js');
