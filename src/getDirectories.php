@@ -41,7 +41,9 @@ function getDirectories($base_dir, $pathProject, $level = 0) {
 				'validation.js',
 				'video_avid.js',
 				'dr-dtime.js',
-				'placeholders-3.0.2.min.js'
+				'placeholders-3.0.2.min.js',
+				'history.ielte7.min.js',
+				'9.js'
 			);
 			if ($extension == 'js') {
 				if (!in_array($file, $js_files)) {

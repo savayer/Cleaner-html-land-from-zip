@@ -52,7 +52,7 @@
 		for ($i = 0; $i < $Css_count; $i++) {
 			$html['head']->append('<link rel="stylesheet" href="css/' . $addCss[$i] . '">');
 		}
-	} else {
+	} else if ($Css_count != 0) {
 		$html['head']->append('<link rel="stylesheet" href="css/' . $addCss[0] . '">');
 	}
 
@@ -61,7 +61,7 @@
 		for ($i = 0; $i < $Js_count; $i++) {
 			$html['head']->append('<script src="js/' . $addJs[$i] . '"></script>');
 		}
-	} else {
+	} else if ($Js_count != 0) {
 		$html['head']->append('<script src="js/' . $addJs[0] . '"></script>');
 	}
 	/****************************************************/
