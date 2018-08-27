@@ -10,7 +10,7 @@
 	}
 	$filename = $_FILES['file']['name'];
 	
-	if ($_FILES['file']['type'] !== 'application/zip' 
+	if ($_FILES['file']['type'] !== 'application/zip' && $_FILES['file']['type'] !== 'application/x-zip-compressed'
 	/* $_FILES['file']['type'] !== 'application/x-rar' */) {
 		/* echo json_encode(
 			array(
@@ -60,9 +60,7 @@
 	//$info_for_download = ob_get_contents();
 	//$info_for_download = 'Сleaning completed. <a href="uploads/'.$folderName.'/html.zip" download>Download</a>';
 	//ob_get_clean();
-	
 	echo 'Сleaning completed. <a href="uploads/'.$folderName.'/html.zip" download>Download</a>';
-	print_r($addJs);
 	// echo json_encode(array(
 	// 	'info' => $info_for_download
 	// ));
