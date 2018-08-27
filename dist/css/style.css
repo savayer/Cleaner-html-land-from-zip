@@ -166,7 +166,7 @@ form {
   bottom: 0;
   width: 10px;
   height: 50%;
-  background: #f02c2c;
+  background: #1fa1b7;
   -webkit-transform-origin: center bottom;
           transform-origin: center bottom;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
@@ -212,7 +212,7 @@ form {
   left: 0;
   width: 10px;
   height: 10px;
-  background: #f31515;
+  background: #4647c0;
   border-radius: 50%;
   -webkit-animation: ball 4s infinite;
           animation: ball 4s infinite;
